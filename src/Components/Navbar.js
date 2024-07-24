@@ -17,7 +17,7 @@ export const Navbar = () => {
       </div>
       <div className="flex-row flex gap-3">
         <Dialog>
-          <DialogTrigger className="bg-blue-500 w-[99px] h-[32px] rounded-full">
+          <DialogTrigger className="bg-[#0166ff] w-[99px] h-[32px] rounded-full">
             +Record
           </DialogTrigger>
           <DialogContent>
