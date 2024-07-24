@@ -1,6 +1,22 @@
 import { CiSquareRemove } from "react-icons/ci";
+import { AddCategory } from "@/Components/AddCategory";
+import { FaGift } from "react-icons/fa6";
+import { PiTShirtLight } from "react-icons/pi";
+import { PiForkKnifeFill } from "react-icons/pi";
+import { PiTaxiFill } from "react-icons/pi";
+import { PiWineFill } from "react-icons/pi";
+import { MdHomeFilled } from "react-icons/md";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/Components/ui/input";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 import {
   Select,
   SelectContent,
@@ -10,6 +26,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
 export const Add = () => {
   return (
     <div className="w-[792px] h-[512px] border bg-white rounded-xl flex-row">
@@ -47,12 +64,44 @@ export const Add = () => {
             <div className="mt-4">
               <Select>
                 <SelectTrigger className="w-[348px] h-[48px] border bg-[#f3f4f6] text-[#9ca3af]">
-                  <SelectValue placeholder="Choose" />
+                  <SelectValue placeholder="Find or choose category" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="light">Light</SelectItem>
-                  <SelectItem value="dark">Dark</SelectItem>
-                  <SelectItem value="system">System</SelectItem>
+                  <SelectItem value="dark">
+                    <div className="flex gap-2">
+                      <MdHomeFilled className="w-[18px] h-[19px] text-[#0166ff]" />{" "}
+                      Home
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="Gift">
+                    <div className="flex gap-2">
+                      <FaGift className="text-[#ff4545]" /> Gift
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="Food">
+                    <div className="flex gap-2">
+                      <PiForkKnifeFill className="w-[17px] h-[19px] text-[#fb8a22]" />{" "}
+                      Food
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="Drink">
+                    <div className="flex gap-2">
+                      <PiWineFill className="w-[15px] h-[21px] text-[#a804ab]" />{" "}
+                      Drink
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="Taxi">
+                    <div className="flex gap-2">
+                      <PiTaxiFill className="w-[23px] h-[20px] text-[#eab308]" />{" "}
+                      Taxi
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="Shopping">
+                    <div className="flex gap-2">
+                      <PiTShirtLight className="w-[24px] h-[18px] text-[#6f6cf3]" />{" "}
+                      Shopping
+                    </div>
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
