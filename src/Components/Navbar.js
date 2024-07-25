@@ -1,3 +1,4 @@
+import { Header } from "@/Components/Header";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Dialog,
@@ -7,6 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { AddCategory } from "@/Components/AddCategory";
 export const Navbar = () => {
   return (
     <div className="w-full h-[72px] bg-white flex justify-between flex-row">
@@ -17,16 +19,18 @@ export const Navbar = () => {
       </div>
       <div className="flex-row flex gap-3">
         <Dialog>
-          <DialogTrigger className="bg-[#0166ff] w-[99px] h-[32px] rounded-full">
+          <DialogTrigger className="bg-[#0166ff] w-[99px]l h-[32px] rounded-full">
             +Record
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Are you absolutely sure?</DialogTitle>
+              {/* <Header></Header> */}
+              <AddCategory></AddCategory>
+              {/* <DialogTitle>Are you absolutely sure?</DialogTitle>
               <DialogDescription>
                 This action cannot be undone. This will permanently delete your
                 account and remove your data from our servers.
-              </DialogDescription>
+              </DialogDescription> */}
             </DialogHeader>
           </DialogContent>
         </Dialog>

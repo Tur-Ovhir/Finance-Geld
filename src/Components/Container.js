@@ -15,6 +15,7 @@ import { IoHomeSharp } from "react-icons/io5";
 import { CiForkAndKnife } from "react-icons/ci";
 import { Chevron } from "@/Asset/chevronright";
 import { Add } from "@/Components/Add";
+import { Button } from "./ui/button";
 import {
   Select,
   SelectContent,
@@ -23,8 +24,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
+import { useState } from "react";
 
 export const Container = () => {
+  const [value, setValue] = useState([0, 1000]);
+  const handleChange = (newValue) => {
+    setValue(newValue);
+  };
   return (
     <div className="w-full h-[1100px] bg-[#f3f4f6] flex">
       <div className="w-[282px] h-[1080px] border-2">
@@ -204,23 +210,28 @@ export const Container = () => {
             <h1 className="text-xl">+ Add Category</h1>
           </div>
         </div>
-        <div className="w-[245px] h-[100px]  mt-10">
+        <div className="w-[245px] h-[100px]  mt-16">
           <h1>Amount Range</h1>
-          <div className="w-[245px] h-[48px] flex gap-3 mt-2">
-            <h1 className="w-[115px] h-[48px] bg-slate-300 rounded-xl border">
-              0
-            </h1>
-            <h1 className="w-[115px] h-[48px] bg-slate-300 rounded-xl border">
-              1000
-            </h1>
+          <div className="gap-3 flex mt-2">
+            <Button className="bg-slate-200 w-[115px] h-[48px] text-zinc-950 border rounded-xl">
+              {value[0]}
+            </Button>
+            <Button className="bg-slate-200 w-[115px] h-[48px] text-zinc-950 border rounded-xl">
+              {value[1]}
+            </Button>
           </div>
+          <Slider
+            className="mt-6 text-[#0166ff] bg-black"
+            value={value}
+            onValueChange={handleChange}
+            min={0}
+            max={1000}
+            step={1}
+          />
         </div>
-        <div className="w-[245px] h-[20px] ">
-          <Slider defaultValue={[1000]} max={1000} step={1} />
-        </div>
-        <div className="flex w-[245px] h-[5px] justify-between">
-          <h1>0</h1>
-          <h1>1000</h1>
+        <div className="w-[245px] h-[20px] flex mt-6 justify-between ">
+          <h1> {value[0]} </h1>
+          <h1> {value[1]} </h1>
         </div>
       </div>
 
