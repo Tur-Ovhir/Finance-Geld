@@ -1,3 +1,4 @@
+"use client";
 import {
   Dialog,
   DialogContent,
@@ -101,7 +102,7 @@ export const Container = () => {
           <div className="mt-4 gap-4 flex flex-col text-[#1f2937]">
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Food & Drinks</h1>
               </div>
               <div>
@@ -110,7 +111,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Food & Drinks</h1>
               </div>
               <div>
@@ -119,7 +120,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Shopping</h1>
               </div>
               <div>
@@ -128,7 +129,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Housing</h1>
               </div>
               <div>
@@ -137,7 +138,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Transportation</h1>
               </div>
               <div>
@@ -146,7 +147,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Vehicle</h1>
               </div>
               <div>
@@ -155,7 +156,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Life & Entertainment</h1>
               </div>
               <div>
@@ -164,7 +165,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Communication, PC</h1>
               </div>
               <div>
@@ -173,7 +174,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Financial expenses</h1>
               </div>
               <div>
@@ -182,7 +183,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Investments</h1>
               </div>
               <div>
@@ -191,7 +192,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Income</h1>
               </div>
               <div>
@@ -200,7 +201,7 @@ export const Container = () => {
             </div>
             <div className="flex gap-2 items-center justify-between">
               <div className="flex gap-2">
-                <FaEye className="text-gray-500" />
+                <FaEye className="text-gray-500 hover:text-black" />
                 <h1>Others</h1>
               </div>
               <div>

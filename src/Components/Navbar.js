@@ -1,3 +1,4 @@
+"use client";
 import { Header } from "@/Components/Header";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {

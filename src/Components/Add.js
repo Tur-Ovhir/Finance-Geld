@@ -1,3 +1,4 @@
+"use client";
 import { CiSquareRemove } from "react-icons/ci";
 import { AddCategory } from "@/Components/AddCategory";
 import { FaGift } from "react-icons/fa6";
@@ -10,6 +11,8 @@ import { MdHomeFilled } from "react-icons/md";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/Components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Calendarr } from "./Calendarr";
+
 import {
   Dialog,
   DialogContent,
@@ -182,29 +185,11 @@ export const Add = () => {
             <div className="mt-4 flex gap-3">
               <div>
                 <h1>Date</h1>
-                <Select>
-                  <SelectTrigger className="w-[170px] h-[48px] border bg-[#f3f4f6] mt-3">
-                    <SelectValue placeholder="Oct,30,2023" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="light">Light</SelectItem>
-                    <SelectItem value="dark">Dark</SelectItem>
-                    <SelectItem value="system">System</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Calendarr className="w-[168px] h-[48px]" />
               </div>
               <div>
                 <h1>Date</h1>
-                <Select>
-                  <SelectTrigger className="w-[170px] h-[48px] border bg-[#f3f4f6] mt-3">
-                    <SelectValue placeholder="4: 1 5 PM" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="light">Light</SelectItem>
-                    <SelectItem value="dark">Dark</SelectItem>
-                    <SelectItem value="system">System</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Input className="w-[168px] h-[48px] mt-2" />
               </div>
             </div>
             <div className="w-[348px] h-[40px] bg-blue-500 mt-9 text-white rounded-full text-center">
