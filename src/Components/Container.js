@@ -15,7 +15,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { IoHomeSharp } from "react-icons/io5";
 import { CiForkAndKnife } from "react-icons/ci";
 import { Chevron } from "@/Asset/chevronright";
-import { Add } from "@/Components/Add";
+import { Add } from "@/components/Add";
 import { Button } from "./ui/button";
 import {
   Select,

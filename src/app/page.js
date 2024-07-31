@@ -1,8 +1,8 @@
 "use client";
-import { Dialog } from "@/Components/ui/dialog";
-import { Navbar } from "@/Components/Navbar";
+import { Dialog } from "@/components/ui/dialog";
+import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
-import { Container } from "@/Components/Container";
+import { Container } from "@/components/Container";
 
 export default function Home() {
   return (

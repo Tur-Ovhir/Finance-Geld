@@ -1,6 +1,6 @@
 "use client";
 import { CiSquareRemove } from "react-icons/ci";
-import { AddCategory } from "@/Components/AddCategory";
+import { AddCategory } from "@/components/AddCategory";
 import { FaGift } from "react-icons/fa6";
 import { PiTShirtLight } from "react-icons/pi";
 import { CiCirclePlus } from "react-icons/ci";
@@ -9,7 +9,7 @@ import { PiTaxiFill } from "react-icons/pi";
 import { PiWineFill } from "react-icons/pi";
 import { MdHomeFilled } from "react-icons/md";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/Components/ui/input";
+import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Calendarr } from "./Calendarr";
 
@@ -45,7 +45,7 @@ export const Add = () => {
           <div className="w-[396px] h-[444px]">
             <div className="w-[348px] h-[40px] flex ">
               <div className="w-[172px] h-[40px] border rounded-full flex text-center items-center hover:bg-[#0166ff] justify-center">
-                <Dialog className="">
+                <Dialog>
                   <DialogTrigger>Expence</DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
