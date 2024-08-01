@@ -187,9 +187,11 @@ export const Add = () => {
                 <h1>Date</h1>
                 <Calendarr className="w-[168px] h-[48px]" />
               </div>
-              <div>
+              <div className="flex flex-col ">
                 <h1>Date</h1>
-                <Input className="w-[168px] h-[48px] mt-2" />
+                <div className="w-[168px] h-[48px]">
+                  <Calendarr className="w-[168px] h-[48px]" />
+                </div>
               </div>
             </div>
             <div className="w-[348px] h-[40px] bg-blue-500 mt-9 text-white rounded-full text-center">

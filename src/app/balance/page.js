@@ -1,14 +1,7 @@
-import { CiMoneyBill } from "react-icons/ci";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
-
-export default function Currency() {
+import { PiCoins } from "react-icons/pi";
+export default function Balance() {
   return (
     <div className="w-full h-screen justify-center flex mt-8">
       <div className="w-[384px] h-[616px] b bg-white  justify-between flex flex-col items-center ">
@@ -23,11 +16,11 @@ export default function Currency() {
                 <div className="w-[24px] h-[24px] border rounded-full bg-[#0166ff] text-white flex items-center justify-center">
                   <div>1</div>
                 </div>
-                <div className="w-[92px] border h-[1px] bg-[#f3f4f6] mt-3"></div>
-                <div className="w-[24px] h-[24px] border rounded-full flex items-center justify-center bg-[#e5e7eb]">
+                <div className="w-[92px] border h-[4px] bg-[#0166ff] mt-3"></div>
+                <div className="w-[24px] h-[24px] border rounded-full flex items-center justify-center bg-[#0166ff] text-white">
                   <div>2</div>
                 </div>
-                <div className="w-[92px] h-[1px] border bg-[#f3f4f6] mt-3"></div>
+                <div className="w-[92px] h-[4px] border bg-[#f3f4f6] mt-3"></div>
                 <div className="w-[24px] h-[24px] border rounded-full flex items-center justify-center bg-[#f3f4f6]">
                   <div>3</div>
                 </div>
@@ -40,36 +33,25 @@ export default function Currency() {
             <div className="w-[384px] h-[184px] flex flex-col items-center ">
               <div className="w-[225px] h-[96px]  justify-center flex flex-col items-center -mt-6 ">
                 <div className="w-[48px] h-[48px] bg-[#0166ff]  rounded-full justify-center items-center flex">
-                  <CiMoneyBill className="w-[30px] h-[18px] text-white border" />
+                  <PiCoins className="w-[30px] h-[22px] text-white " />
                 </div>
-                <h1 className="text-xl">Select base currency</h1>
+                <h1 className="">Set up your cash Balance</h1>
               </div>
               <div className="w-[384px] h-[64px] mt-3 ">
-                <Select className="bg-[#F3F4F6] text-xl">
-                  <SelectTrigger className="w-[384px] h-[64px]">
-                    <SelectValue placeholder="MNT - Mongolian Tugrik" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="light">
-                      MNT - Mongolian Tugrik
-                    </SelectItem>
-                    <SelectItem value="dark">USA - DOLLAR</SelectItem>
-                    <SelectItem value="India">INDIA - RUBIL</SelectItem>
-                    <SelectItem value="Sung">SUNG - DOLLAR</SelectItem>
-                    <SelectItem value="China">CHINA - YUAN</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Input
+                  className="bg-[#f3f4f6]"
+                  type="email"
+                  placeholder="Email"
+                />
               </div>
-              <div className="w-[384px] h-[32px] mt-3">
+              <div className="">
                 <p className="text-[#5e6b7c] text-sm">
-                  Your base currency should be the one you use most often. All
-                  transaction in other currencies will be calculated based on
-                  this one
+                  How much cash do you have in your wallet?
                 </p>
               </div>
             </div>
-            <div className="mt-12">
-              <Link href="/balance">
+            <div className="">
+              <Link href="/done">
                 <button
                   className="w-[384px] h-[48px] bg-blue-600 rounded-xl text-white hover:bg-blue-800"
                   type="submit"

@@ -300,7 +300,6 @@ export const Container = () => {
               ></label>
               <CiForkAndKnife className=" bg-red-600 w-[40px] h-[40px] border rounded-full " />
               Food & Drinks
-              <Chevron></Chevron>
             </div>
             <div>
               <p className="text-red-600">-1,000₮</p>

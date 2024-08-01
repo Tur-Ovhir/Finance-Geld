@@ -32,7 +32,7 @@ const Login = () => {
             </div>
             <div className="mt-5">
               <button
-                className="w-[384px] h-[48px] bg-blue-600 rounded-xl text-white"
+                className="w-[384px] h-[48px] bg-blue-600 rounded-xl text-white hover:bg-blue-800"
                 type="submit"
               >
                 Log in

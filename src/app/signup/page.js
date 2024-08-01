@@ -43,7 +43,7 @@ const Signup = () => {
             <div className="mt-5">
               <Link href="/loading">
                 <button
-                  className="w-[384px] h-[48px] bg-blue-600 rounded-xl text-white"
+                  className="w-[384px] h-[48px] bg-blue-600 rounded-xl text-white hover:bg-blue-800"
                   type="submit"
                 >
                   Sign Up
